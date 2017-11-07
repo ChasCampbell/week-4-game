@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Week Four Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> </head>
+
+<body>
+    <script>
+        randyNumber = Math.floor(Math.random() * 102) + 19;
+
+        function setNumber() {
+            document.getElementById("ptarget").innerHTML = randyNumber;
+        }
+
+        function pointSetter() {
+            var fruitPointsNameArray = ["fruitPointsA", "fruitPointsL", "fruitPointsG", "fruitPointsS"];
+            for (i = 1; i < 5; i++) {
+                var fruitPointsName = fruitPointsNameArray[i];
+
+                function pointSetter(fruitPointsName) {
+                    function fruitPN() {
+                        fruitPointsName = Math.floor(Math.random() * 12) + 1;
+                        alert(fruitPointsName);
+                    }
+                }
+            }
+        }
+        alert("begin");
+        pointSetter();
+        var score = 0;
+        var wins = 0;
+        var losses = 0;
+        for (i = 0; i < 5; i++) {
+            var fruity = ("apple", "lemon", "grape", "strawberry");
+            var fruityValue = ("appleValue", "lemonValue", "grapeValue", "strawberryValue");
+            $("fruity").on("click", function() {
+                score = score + fruityValue;
+            });
+        }
+        alert("continue");
+    </script>
+    <!-- This would create the target score display. <!-- This would
+            do what we need if my script would not load. <!-- This div will be filled dynamically using JavaScript. If not, this does it. </body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

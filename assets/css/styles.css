@@ -1,0 +1,158 @@
+body {
+    box-sizing: border-box;
+}
+
+#centerTop {
+    margin: auto;
+    text-align: center;
+    font-size: 48px;
+    width: 80%;
+    padding-top: 25px;
+    margin-top: 50px;
+    color: #0066ff;
+}
+
+h1 {
+    font-family: "Brush Script", sans-serif;
+    font-size: 36;
+    color: #595959;
+}
+
+h2 {
+    font-family: 'Arial Black', sans-serif;
+    color: #0066ff;
+}
+
+h3 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 24;
+    color: #595959;
+}
+
+h4 {
+    font-family: 'Arial Black', sans-serif;
+    color: #595959;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    color: #595959;
+}
+
+topLine {
+    text-align: center;
+    width: 50%;
+    padding-top: 25px;
+    margin-top: 50px;
+    padding-bottom: 200px;
+    padding-right: 50px;
+    color: #0066ff;
+}
+
+#leftside {
+    background-color: #e6e6ff;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    font-size: 18px;
+    color: #595959;
+    padding-left: 50px;
+    padding-top: 100px;
+    min-height: 1000px;
+}
+
+.col-md-3 {
+    margin: 0;
+}
+
+.rightside {
+    border: none;
+    background-color: #e6e6ff;
+    font-family: Arial, sans-serif;
+    font-size: 36;
+    text-align: center;
+    color: #595959;
+    min-height: 1000px;
+    z-index: 1;
+}
+
+.random-number {
+    margin: auto;
+    height: 150px;
+    width: 150;
+    padding: 10px;
+    color: #595959;
+}
+
+#random-number {
+    margin: auto;
+    text-align: center;
+    font-size: 48;
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    color: #595959;
+    height: 100px;
+}
+
+#fruits {
+    margin: auto;
+    height: 200px;
+    border: 5px;
+    border-color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+#ptarg {
+    font-size: 24px;
+    color: #595959;
+}
+
+#ptarget {
+    font-size: 36px;
+    color: #595959;
+}
+
+#yourScore {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #595959;
+}
+
+#Score {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #0066ff;
+}
+
+#lcount {
+    margin: auto;
+    text-align: center;
+    color: red;
+}
+
+#wcount {
+    margin: auto;
+    text-align: center;
+    color: red;
+    padding-bottom: 25px;
+}
+
+.media-object {
+    display: inline-block;
+    width: 80px;
+    margin: 10px;
+    float: left;
+}
+
+#centercontainer {
+    background-color: #cce0ff;
+    padding-top: 50px;
+    color: #595959;
+    min-height: 1000px;
+    text-align: center;
+    padding-right: 0;
+    margin: auto;
+}

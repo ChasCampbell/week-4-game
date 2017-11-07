@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Week Four Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> </head>
+
+<body>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    <div class="container">
+        <div class=" row ">
+            <div class="col-md-3 " id="leftside ">
+                <topLine>
+                    <h2>Instructions</h2>
+                </topLine>
+                <section>
+                    <p> In the beginning, there will be a number. <br><br> Your goal is to match that number. <br> WITHOUT going over it. <br><br> There are four fruits; each has a random value. <br> The values change with each new game. <br><br> When you
+                        click on a fruit, that value will add to your score. <br><br> Match the target - you win! <br><br> Go over - you lose. <br><br> After each win or loss, you get a new target. <br><br> Your wins and losses will be tracked. To reset
+                        them, refresh the screen. <br><br> Good Luck! Go forth and be fruitful! </p>
+                </section>
+            </div>
+            <div class="col-md-6 " id="centercontainer ">
+                <div id="centerTop ">
+                    <h1>Fruitful Fun</h1>
+                </div>
+                <div class="random-number " id="random-number ">
+                    <p id="ptarg ">Target Score</p>
+                    <p id="ptarget ">TARGET</p>
+                </div>
+                <div>
+                    <h3 id="YourScore ">Your Score</h3>
+                    </section>
+                    <p id="Score ">0</p>
+                </div>
+                <div id="wcount ">
+                    <h4>wins</h4>
+                    <p id=wins>0</p>
+                </div>
+                <div id="lcount ">
+                    <h4>losses</h4>
+                    <p id=losses>0</p>
+                </div>
+
+                <div id="fruits">
+                    <section></section>
+                    <img src=" assets/images/Apple.jpg " class="media-object " id="apple "></img>
+                    <img src=" assets/images/Lemon.jpg " class="media-object " id="lemon "></img>
+                    <img src="assets/images/Grape.jpg " class="media-object " id="grape "></img>
+                    <img src="assets/images/Strawberry.jpg " class="media-object " id="strawberry "></img>
+
+                    </section>
+                </div>
+            </div>
+
+            <div class=" col-md-3 ">
+                <section class="rightside ">
+                    <p>
+
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
