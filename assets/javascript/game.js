@@ -10,11 +10,18 @@ $(document).ready(function() {
     // Create the fruit images on the index page.
     // Start with an object;
     var fruitImgObj = {
-        apple: "src=images/Apple.jpg",
-        grape: "src=images/Grape.jpg",
-        lemon: "src=images/Lemon.jpg",
-        strawberry: "src=images/Strawberry.jpg",
+        apple: "images/Apple.jpg",
+        grape: "images/Grape.jpg",
+        lemon: "images/Lemon.jpg",
+        strawberry: "images/Strawberry.jpg",
     };
+
+    var appleValue = 0;
+    var lemonValue = 0;
+    var grapeValue = 0;
+    var strawberryValue = 0;
+
+    // CONSOLE LOG SAYS appleValue not defined???
 
     // Create a score keeper to show the player's score.
     var score = 0;
@@ -32,6 +39,7 @@ $(document).ready(function() {
 
         randyNumber = Math.floor(Math.random() * 102) + 19;
         var rand = randyNumber.toString();
+
         document.getElementById("ptarget").innerHTML = rand;
 
     }
@@ -42,56 +50,54 @@ $(document).ready(function() {
     //Initialize the fruit values (and use to reset them on a win or loss).
     // Create a random number from 1 to 12 for each of the fruits.
     function reset(fruitPointsValue) {
-        var appleValue = 0;
-        var lemonValue = 0;
-        var grapeValue = 0;
-        var strawberryValue = 0;
+
         var fruitPointsValueArray = [appleValue, lemonValue, grapeValue, strawberryValue];
-        for (i = 1; i < 5; i++) {
-            fruitPointsValue = Math.floor(Math.random() * 12);
-        }
-
-
-        // THIS IS WHERE WE PLAY THE GAME
-        // Create a listener to detect a button click.
-        // Add the  correct fruit value to the score.
-
-        $("apple").on("click", function() {
-            score = score + appleValue;
-        });
-        $("lemon").on("click", function() {
-            score = score + lemonValue;
-        });
-        $("grape").on("click", function() {
-            score = score + grapeValue;
-        });
-        $("strawberry").on("click", function() {
-            score = score + strawberryValue;
-        });
-        // document.getElementById("Score").innerHTML = "score";
-
-        //If = target - add 1 to win counter and restart at top.
-        //Check the score against the target.
-        if (score === randyNumber) {
-            //If = target - add 1 to win counter and restart at top.
-            wins === wins++;
-            document.getElementById("wins").innerHTML = wins;
-
-        }
-        else if (score > randyNumber) {
-
-            //If > target - add 1 to loss counter.
-            losses === losses++;
-            document.getElementById("losses").innerHTML = losses;
-
-        }
-
-        function clear() {
-            score = 0;
-        }
-        clear();
-        init();
+        appleValue = Math.floor(Math.random() * 12);
+        lemonValue = Math.floor(Math.random() * 12);
+        grapeValue = Math.floor(Math.random() * 12);
+        atrawberryValue = Math.floor(Math.random() * 12);
     }
+    console.log(appleValue);
+
+    // THIS IS WHERE WE PLAY THE GAME
+    // Create a listener to detect a button click.
+    // Add the  correct fruit value to the score.
+
+    $("#apple ").on("click", function() {
+        score = score + appleValue;
+    });
+    $("#lemon ").on("click", function() {
+        score = score + lemonValue;
+    });
+    $("#grape ").on("click", function() {
+        score = score + grapeValue;
+    });
+    $("#strawberry ").on("click", function() {
+        score = score + strawberryValue;
+    });
+    // document.getElementById("Score").innerHTML = "score";
+
+    //If = target - add 1 to win counter and restart at top.
+    //Check the score against the target.
+    if (score === randyNumber) {
+        //If = target - add 1 to win counter and restart at top.
+        wins === wins++;
+        document.getElementById("wins").innerHTML = wins;
+
+    }
+    else if (score > randyNumber) {
+
+        //If > target - add 1 to loss counter.
+        losses === losses++;
+        document.getElementById("losses").innerHTML = losses;
+
+    }
+
+    function clear() {
+        score = 0;
+    }
+    clear();
+    init();
 });
 /* 
     //Import the fruit pictures. Did not get this to work.   

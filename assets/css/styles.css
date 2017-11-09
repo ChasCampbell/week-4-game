@@ -64,16 +64,7 @@ topLine {
     margin: 0;
 }
 
-.rightside {
-    border: none;
-    background-color: #e6e6ff;
-    font-family: Arial, sans-serif;
-    font-size: 36;
-    text-align: center;
-    color: #595959;
-    min-height: 1000px;
-    z-index: 1;
-}
+
 
 .random-number {
     margin: auto;
@@ -140,7 +131,7 @@ topLine {
     padding-bottom: 25px;
 }
 
-.media-object {
+.button {
     display: inline-block;
     width: 80px;
     margin: 10px;
